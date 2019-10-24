@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Apply 360 with Chrome-WebKit-Core -->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Disable Baidu-Transcoding -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Sogou Feed" />
+
+    <title>Test</title>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+        url: 'http://127.0.0.1:8425/apis/test',
+        method: 'post',
+        data: {
+          q: 1
+        },
+        dataType: 'json',
+        success: function(res) {
+          console.log(res)
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "ajax-polyfill-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/ajax.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack-cli --config ./webpack/webpack.config.js",
+    "build:dev": "webpack-dev-server --config ./webpack/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitHubJian/ajax-polyfill-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitHubJian/ajax-polyfill-js/issues"
+  },
+  "homepage": "https://github.com/GitHubJian/ajax-polyfill-js#readme",
+  "devDependencies": {
+    "@koa/cors": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
